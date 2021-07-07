@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)) , url(images/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+nav img {
+    width: 250px;
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    align-items: center;
+    font-size: 17px;
+    
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 12px;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: rgb(23, 169, 189);
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main-text {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+}
+.main-text div h1{
+    font-size: 44px;
+    margin-bottom: 17px;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.press-btn{
+    border: 1px solid white;
+    padding: 15px 80px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.press-btn:hover{
+    background: whitesmoke;
+    transition: 1s;
+    color: #000;
+}
+nav .fa-gamepad{
+    display: none;
+}
+nav .fa-times{
+    display: none;
+}
+/* TOP-3 Games section */
+.top3{
+    width: 90%;
+    text-align: center;
+    padding-top: 60px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.top-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.top-col img{
+    width: 100%;
+    display: block;
+}
+.layer {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+}
+.layer:hover{
+    background: rgba(116, 209, 238, 0.7);
+
+}
+.layer h3{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    color: #fff;
+    left: 50%;
+    font-weight: 500;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.8s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.quote {
+    width: 85%;
+    margin: auto;
+    padding: 40px 10px;
+    text-align: center;
+}
+.quote h1{
+    font-weight: 500;
+    font-size: 33px;
+    transition: 0.8s;
+}
+.quote .slogen {
+    color: rgb(116, 209, 238);
+}
+.quote h1:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2) ;
+}
+.reviews{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+.reviews h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+.reviews-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding-top: 25px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 9px;
+}
+.reviews-col img {
+    height: 40px;
+    border-radius: 50%;
+}
+.reviews-col div{
+    margin-left: 8px;
+}
+.reviews-col p{
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(4,9,30,0.5);
+}
+.reviews-col h2{
+    font-size: 21px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.reviews-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2) ;
+}
+.fa-star , .fa-star-half-alt {
+    color: rgb(116, 209, 238) ;
+}
+.gamers{
+    width: 85%;
+    background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)) , url(images/gamers.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+    margin: 40px auto;
+}
+.gamers h1 {
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.footer{
+    width: 85%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 15px;
+    text-align: center; 
+}
+.footer h1{
+    font-weight: 500;
+    font-size: 33px;
+}
+.footer p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #777;
+    padding-top: 10px;
+}
+.footer span {
+    color: rgb(116, 209, 238);
+    font-weight: bold;
+}
+.fab , far{
+    padding: 15px;
+    color: rgb(116, 209, 238);
+}
+
+
+/* CSS for second Page */
+.header1{
+    width: 100%;
+    height: 12vh;
+    background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)) , url(images/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.secondbg{
+    width: 100%;
+    text-align: center;
+    height: 30vh;
+    position: relative;
+}
+.secondbg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.secondbg h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+.gotit{
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    margin: auto;
+    background-color: #fff3f3;
+    transition: 0.5s;
+}
+.gotit p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #777;
+}
+.gotit p span{
+    color: rgb(116, 209, 238) ;
+}
+.gotit:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#parent{
+    display:flex;
+    padding: 10px 30px;
+    justify-content: center;
+}
+.child{
+    flex-basis: 31%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.child img {
+    width: 100%;
+    display: block;
+}
+.layer1 {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+}
+.layer1:hover{
+    background: rgba(116, 209, 238, 0.7);
+
+}
+.layer1 h3{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    color: #fff;
+    left: 50%;
+    font-weight: 500;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.8s;
+}
+.layer1:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.list-updated{
+    width: 85%;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+.list-updated h1{
+    font-size: 28px;
+    font-weight: 500;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    color: #777;
+}
+.gamers-all-time {
+    width: 85%;
+    /* background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)) , url(images/gamers-all-time.jpg); */
+    background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)) , url(images/gtav_details09122014_002.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+    margin: 60px auto;
+}
+.gamers-all-time h1{
+    font-weight: 600;
+}
+.footer1{
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center; 
+}
+.footer1 h1{
+    font-weight: 500;
+    font-size: 33px;
+}
+.footer1 p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #777;
+    padding-top: 10px;
+}
+.footer1 span {
+    color: rgb(116, 209, 238);
+    font-weight: bold;
+}
+.fab , far{
+    padding: 15px;
+    color: rgb(116, 209, 238);
+}
+
+/* CSS For responsive website */
+
+@media(max-width : 700px){
+    .main-text div h1{
+        font-size: 25px;
+    }
+    .navlinks ul li{
+        display: block;
+    }
+    nav img{
+        width: 50%;
+    }
+    .navlinks{
+        position: absolute;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        background: rgb(116, 209, 238) ;
+        height: 100vh;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        font-size: 22px;
+        margin: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navlinks ul {
+        padding: 25px;
+    }
+    .navlinks ul li {
+        margin: 7px auto;
+    }
+    .press-btn{
+        padding: 15px 60px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .layer h3 {
+        opacity: 1;
+    }
+    .reviews-col p{
+        font-size: 12px;
+    }
+    .reviews-col h2{
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+    .gamers h1{
+        font-size: 22px;
+    }
+    .reviews-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .footer h1{
+        font-size: 22px;
+    }
+    .footer p{
+        font-size: 14px;
+    }
+    .quote h1{
+        font-size: 22px;
+    }
+    .secondbg div h1{
+        font-size: 30px;
+    }
+    .wegotit {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    #parent{
+        flex-direction: column;
+    }
+    .layer1 h3{
+        opacity: 1;
+    }
+    .list-updated h1{
+        font-size: 21px;
+    }
+    .footer1{
+        flex-direction: column;
+    }
+}
